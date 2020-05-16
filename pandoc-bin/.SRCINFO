@@ -1,0 +1,18 @@
+pkgbase = pandoc-bin
+    pkgdesc = Pandoc - executable only, without 750MB Haskell depends/makedepends
+    pkgver = 2.9.2.1
+    pkgrel = 1
+    url = http://pandoc.org
+    arch = x86_64
+    license = GPL
+    optdepends = texlive-core: for pdf output
+    provides = pandoc
+    conflicts = pandoc
+    replaces = pandoc-static
+    replaces = pandoc-lite
+    source = https://github.com/jgm/pandoc/releases/download/2.9.2.1/pandoc-2.9.2.1-linux-amd64.tar.gz
+    source = https://github.com/jgm/pandoc/archive/2.9.2.1.tar.gz
+    sha256sums = 5b61a981bd2b7d48c1b4ba5788f1386631f97e2b46d0d1f1a08787091b4b0cf8
+    sha256sums = 73ee38d29f928f69d6962956c1701c525141aaf6f428a8430f2cd901b191e933
+
+pkgname = pandoc-bin
