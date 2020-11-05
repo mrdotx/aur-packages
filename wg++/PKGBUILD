@@ -1,6 +1,6 @@
 pkgname=wg++
-pkgver=3.0.0_20200515171900
-_pkgver=2020.05.15_171900
+pkgver=3.1.0_20201105133501
+_pkgver=2020.11.05_133501
 pkgrel=1
 pkgdesc='WebGrab+Plus is a free multi-site incremental XMLTV EPG grabber.'
 arch=('any')
@@ -8,12 +8,12 @@ url='http://webgrabplus.com/'
 license=('custom')
 depends=('mono')
 provides=('wg++')
-source=("http://webgrabplus.com/sites/default/files/download/SW/V3.0.0/WebGrabPlus_V3.0_install.tar.gz"
+source=("http://webgrabplus.com/sites/default/files/download/SW/V3.1.0/WebGrabPlus_V3.1_install.tar.gz"
         "http://webgrabplus.com/sites/default/files/download/ini/SiteIni.Pack_$_pkgver.zip"
         "wg++")
-md5sums=("49a7b8753f065e16ff6785325528d1a0"
-        "478f205d570c5f680445953a644f2d0e"
-        "96ddf77a84554bb457dab4fd63e82ae6")
+md5sums=('1f1ee11bb0c7db9068a6833788079d1b'
+         'f42a99546d74366bd3eef63a653142ec'
+         '96ddf77a84554bb457dab4fd63e82ae6')
 
 package() {
     # Install application files:
