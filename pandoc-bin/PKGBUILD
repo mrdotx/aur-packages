@@ -1,3 +1,4 @@
+# Maintainer: mrdotx <klassiker@gmx.de>
 pkgname=pandoc-bin
 pkgver=2.11.1
 pkgrel=1
