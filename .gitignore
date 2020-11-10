@@ -1,6 +1,23 @@
 # path:       /home/klassiker/.local/share/repos/aur-packages/.gitignore
 # author:     klassiker [mrdotx]
 # github:     https://github.com/mrdotx/aur-packages
-# date:       2020-08-31T17:22:13+0200
+# date:       2020-11-10T17:24:12+0100
 
+# pandoc-bin
+pandoc-bin/pkg/
+pandoc-bin/src/
+pandoc-bin/*.tar.gz
+pandoc-bin/*.pkg.tar.zst
 
+# rxvt-unicode
+rxvt-unicode-24-bit-glyphs/pkg/
+rxvt-unicode-24-bit-glyphs/src/
+rxvt-unicode-24-bit-glyphs/*.tar.bz2
+rxvt-unicode-24-bit-glyphs/*.pkg.tar.zst
+
+# wg++
+wg++/pkg/
+wg++/src/
+wg++/*.zip
+wg++/*.tar.gz
+wg++/*.pkg.tar.zst
