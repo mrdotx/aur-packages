@@ -3,7 +3,7 @@ _pkgname=rxvt-unicode
 pkgname=rxvt-unicode-24-bit-glyphs
 pkgver=9.22
 pkgrel=1
-pkgdesc='Unicode enabled rxvt-clone terminal emulator (urxvt) with truecolor and glyphs'
+pkgdesc='Unicode enabled rxvt-clone terminal emulator (urxvt) with truecolor and glyphs support'
 arch=('i686' 'x86_64')
 url='http://software.schmorp.de/pkg/rxvt-unicode.html'
 license=('GPL')
@@ -15,9 +15,8 @@ source=(http://dist.schmorp.de/rxvt-unicode/$_pkgname-$pkgver.tar.bz2
     'urxvtc.desktop'
     'urxvt-tabbed.desktop'
     'font-width-fix.patch'
-    '24-bit-color.patch'
     'line-spacing-fix.patch'
-    'sgr-mouse-mode.patch'
+    '24-bit-color.patch'
     'enable-wide-glyphs.patch'
     'perl-segfault.patch'
     )
@@ -26,9 +25,8 @@ sha1sums=('e575b869782fbfed955f84f48b204ec888d91ba1'
           '62c4ffecfce6967def394dd4d418b68652372ea2'
           'cd204d608d114d39c80331efe0af0231ad6b7e18'
           '01ee8f212add79a158dcd4ed78d0ea1324bdc59b'
-          '9f5db305863b17175e72f9e2d4a78d0d7f25fd34'
           'b7fde1c46af45e831828738874f14b092b1e795f'
-          'dfbc8729c545105eff21e20ef3a4a3841a68a192'
+          '9f5db305863b17175e72f9e2d4a78d0d7f25fd34'
           'd9f3b52b273d13fbd4089a7869ab2e70bf190bc9'
           '361f4649596342d07311c2590b809b85b3a918ee')
 
@@ -36,9 +34,8 @@ prepare() {
     cd $_pkgname-$pkgver
 
     patch -p0 -i ../font-width-fix.patch
-    patch -p0 -i ../24-bit-color.patch
     patch -p0 -i ../line-spacing-fix.patch
-    patch -p0 -i ../sgr-mouse-mode.patch
+    patch -p0 -i ../24-bit-color.patch
     patch -p1 -i ../enable-wide-glyphs.patch
     patch -p1 -i ../perl-segfault.patch
 }
@@ -53,20 +50,23 @@ build() {
         --enable-256-color \
         --enable-combining \
         --enable-fading \
+        --disable-fallback \
         --enable-font-styles \
         --enable-frills \
-        --enable-iso14755 \
-        --enable-keepscrolling \
+        --disable-iso14755 \
+        --disable-keepscrolling \
         --enable-lastlog \
         --enable-mousewheel \
-        --enable-next-scroll \
+        --disable-next-scroll \
         --enable-perl \
+        --disable-pixbuf \
         --enable-pointer-blank \
-        --enable-rxvt-scroll \
+        --disable-rxvt-scroll \
         --enable-selectionscrolling \
-        --enable-slipwheeling \
+        --disable-slipwheeling \
         --enable-smart-resize \
-        --enable-startup-notification \
+        --disable-startup-notification \
+        --enable-text-blink \
         --enable-transparency \
         --enable-unicode3 \
         --enable-utmp \
@@ -74,7 +74,7 @@ build() {
         --enable-wtmp \
         --enable-xft \
         --enable-xim \
-        --enable-xterm-scroll
+        --disable-xterm-scroll
     make
 }
 
