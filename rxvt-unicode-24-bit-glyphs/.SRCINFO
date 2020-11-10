@@ -19,6 +19,7 @@ pkgbase = rxvt-unicode-24-bit-glyphs
 	source = line-spacing-fix.patch
 	source = sgr-mouse-mode.patch
 	source = enable-wide-glyphs.patch
+	source = perl-segfault.patch
 	sha1sums = e575b869782fbfed955f84f48b204ec888d91ba1
 	sha1sums = b5a4507f85ebb7bac589db2e07d9bc40106720d9
 	sha1sums = 01ee8f212add79a158dcd4ed78d0ea1324bdc59b
@@ -26,6 +27,7 @@ pkgbase = rxvt-unicode-24-bit-glyphs
 	sha1sums = b7fde1c46af45e831828738874f14b092b1e795f
 	sha1sums = dfbc8729c545105eff21e20ef3a4a3841a68a192
 	sha1sums = d9f3b52b273d13fbd4089a7869ab2e70bf190bc9
+	sha1sums = 361f4649596342d07311c2590b809b85b3a918ee
 
 pkgname = rxvt-unicode-24-bit-glyphs
 

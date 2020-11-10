@@ -17,6 +17,7 @@ source=(http://dist.schmorp.de/rxvt-unicode/$_pkgname-$pkgver.tar.bz2
     'line-spacing-fix.patch'
     'sgr-mouse-mode.patch'
     'enable-wide-glyphs.patch'
+    'perl-segfault.patch'
     )
 sha1sums=('e575b869782fbfed955f84f48b204ec888d91ba1'
           'b5a4507f85ebb7bac589db2e07d9bc40106720d9'
@@ -24,7 +25,8 @@ sha1sums=('e575b869782fbfed955f84f48b204ec888d91ba1'
           '9f5db305863b17175e72f9e2d4a78d0d7f25fd34'
           'b7fde1c46af45e831828738874f14b092b1e795f'
           'dfbc8729c545105eff21e20ef3a4a3841a68a192'
-          'd9f3b52b273d13fbd4089a7869ab2e70bf190bc9')
+          'd9f3b52b273d13fbd4089a7869ab2e70bf190bc9'
+          '361f4649596342d07311c2590b809b85b3a918ee')
 
 prepare() {
     cd $_pkgname-$pkgver
@@ -34,6 +36,7 @@ prepare() {
     patch -p0 -i ../line-spacing-fix.patch
     patch -p0 -i ../sgr-mouse-mode.patch
     patch -p1 -i ../enable-wide-glyphs.patch
+    patch -p1 -i ../perl-segfault.patch
 }
 
 build() {
