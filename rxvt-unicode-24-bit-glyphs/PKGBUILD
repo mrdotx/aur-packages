@@ -49,7 +49,7 @@ build() {
         --enable-24-bit-color \
         --enable-256-color \
         --enable-combining \
-        --enable-fading \
+        --disable-fading \
         --disable-fallback \
         --enable-font-styles \
         --enable-frills \
