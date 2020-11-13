@@ -1,17 +1,17 @@
 # path:       /home/klassiker/.local/share/repos/aur-packages/.gitignore
 # author:     klassiker [mrdotx]
 # github:     https://github.com/mrdotx/aur-packages
-# date:       2020-11-13T13:36:51+0100
+# date:       2020-11-13T14:27:17+0100
 
 # pandoc-bin
-pandoc-bin/pkg/
-pandoc-bin/src/
-pandoc-bin/*.tar.gz
-pandoc-bin/*.pkg.tar.zst
+/pandoc-bin/pkg/
+/pandoc-bin/src/
+/pandoc-bin/*.tar.gz
+/pandoc-bin/*.pkg.tar.zst
 
 # wg++
-wg++/pkg/
-wg++/src/
-wg++/*.zip
-wg++/*.tar.gz
-wg++/*.pkg.tar.zst
+/wg++/pkg/
+/wg++/src/
+/wg++/*.zip
+/wg++/*.tar.gz
+/wg++/*.pkg.tar.zst
