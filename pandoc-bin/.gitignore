@@ -1,7 +1,7 @@
-# path:       /home/klassiker/.local/share/repos/aur-packages/pandoc-bin/.gitignore
-# author:     klassiker [mrdotx]
-# github:     https://github.com/mrdotx/aur-packages
-# date:       2020-11-20T12:24:29+0100
+# path:   /home/klassiker/.local/share/repos/aur-packages/pandoc-bin/.gitignore
+# author: klassiker [mrdotx]
+# github: https://github.com/mrdotx/aur-packages
+# date:   2021-01-15T13:28:07+0100
 
 /pkg/
 /src/
